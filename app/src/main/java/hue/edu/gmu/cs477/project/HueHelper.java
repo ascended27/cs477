@@ -1,8 +1,13 @@
 package hue.edu.gmu.cs477.project;
 
-/**
- * Created by mrodger4 on 11/20/17.
- */
+import com.philips.lighting.hue.sdk.PHHueSDK;
 
 public class HueHelper {
+
+    private final PHHueSDK phHueSDK;
+
+    public HueHelper(){
+        phHueSDK = PHHueSDK.getInstance();
+    }
+
 }
